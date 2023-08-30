@@ -95,5 +95,5 @@ font:
 
   size: 11.5
 window:
-   opacity: 0.8
+   opacity: 1.0
 
