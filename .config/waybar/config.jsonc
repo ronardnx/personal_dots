@@ -1,0 +1,90 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "font-weight": "normal",
+    "gtk-layer-shell": "true",
+    "exclusive": true,
+    "passtrough": false,
+    "height": 10,
+    "modules-left": [
+        "custom/arch",
+        "wlr/workspaces"
+    ],
+    "modules-center": [ "hyprland/window"
+    ],
+    "modules-right": [
+        "tray",
+        "network",
+        "battery",
+        "pulseaudio",
+        "clock"
+    ],
+    "custom/arch": {
+        "format":"  ",
+      "tooltip": false,
+      "on-click": "rofi -show drun"
+    },
+    "battery": {
+      "bat": "BAT0",
+      "format-charging": "󰚥 ",
+      "adapter": "ADP0",
+      "interval": 1,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon}",
+      "format-warning": "{icon}",
+      "format-critical": "{icon}",
+
+      "format-alt": "{icon} {time}",
+      "format-full": "   ", 
+      "format-icons": ["   ", "   ", "   ", "   ", "   "]
+    },   
+
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+      "(.*) - Mozilla Firefox": "🌎 $1",
+      "(.*) - fish": "> [$1]"
+    }
+    },
+    "wlr/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+    },
+    "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+
+"pulseaudio": {
+        "format": "{icon}",
+        "format-muted": " 󰖁 ",
+        "format-icons": {
+            "default": ["  ", "  ", "  "]
+        },
+        "on-click": "pavucontrol &"
+    },
+
+"network": {
+        /* "format-wifi": "直", */
+        "format-wifi": " {icon}",
+        "format-ethernet": " ",
+        "format-disconnected": "睊",
+        "tooltip-format": "{essid}",
+        "on-click": "kitty nmtui",
+        "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤢 ","󰤨 "],
+    },
+    "clock": {
+        "format": "{:󰥔 %R} ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    },
+}

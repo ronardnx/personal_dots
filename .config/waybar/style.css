@@ -1,0 +1,96 @@
+* {
+  font-family: Ubuntu Nerd Font;
+  font-weight: normal;
+  font-size: 14px;
+  min-height: 0;
+  color: #cdd6f4;
+}
+#window,
+#clock,
+#tray,
+#workspaces,
+#pulseaudio,
+#battery,
+#network,
+#custom-arch {
+  background-color:  #1e1e2e;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  padding: 3px;
+}
+#tray {
+border: 2px solid alpha(#b4befe, 0.3)
+}
+#custom-arch {
+border-left: 2px solid alpha(#b4befe, 0.3);
+border-top: 2px solid alpha(#b4befe, 0.3);
+border-bottom: 2px solid alpha(#b4befe, 0.3)
+}
+#workspaces {
+border-right: 2px solid alpha(#b4befe, 0.3);
+border-top: 2px solid alpha(#b4befe, 0.3);
+border-bottom: 2px solid alpha(#b4befe, 0.3)
+}
+#window {
+border: 2px solid alpha(#b4befe, 0.3);
+}
+#clock {
+border-right: 2px solid alpha(#b4befe, 0.3);
+border-top: 2px solid alpha(#b4befe, 0.3);
+border-bottom: 2px solid alpha(#b4befe, 0.3)
+}
+#network {
+border-left: 2px solid alpha(#b4befe, 0.3);
+border-top: 2px solid alpha(#b4befe, 0.3);
+border-bottom: 2px solid alpha(#b4befe, 0.3)
+}
+#battery,
+#pulseaudio {
+border-top: 2px solid alpha(#b4befe, 0.3);
+border-bottom: 2px solid alpha(#b4befe, 0.3)
+}
+#tray {
+  border-radius: 10px 10px 10px 10px;  
+  margin-right: 3px;
+}
+#custom-arch,
+#network {
+border-radius: 10px 0px 0px 10px;
+}
+#clock,
+#workspaces {
+    border-radius: 0px 10px 10px 0px;}
+#custom-arch {
+margin-left: 3px; }
+#clock {
+  font-weight: bold;
+  margin-right: 3px;
+}
+#window {
+font-weight: bold;
+border-radius: 10px 10px 10px 10px;
+padding-left: 3px;
+padding-right: 3px;
+}
+#workspaces button {
+  color: gray;
+  padding: 1px;
+  }
+#workspaces button.active {
+    color: white;
+}
+
+#workspaces button.focused {
+    color: white;
+  }
+#window {
+  font-weight: bold;
+}
+button {
+  min-width: 16px;
+}
+window#waybar {
+  /* you can also GTK3 CSS functions! */
+  background-color: transparent;
+  border-radius: 10px 10px 10px 10px;
+}
