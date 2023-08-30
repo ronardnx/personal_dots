@@ -19,35 +19,35 @@
   padding: 3px;
 }
 #tray {
-border: 2px solid alpha(#b4befe, 0.3)
+border: 2px solid #9999CC
 }
 #custom-arch {
-border-left: 2px solid alpha(#b4befe, 0.3);
-border-top: 2px solid alpha(#b4befe, 0.3);
-border-bottom: 2px solid alpha(#b4befe, 0.3)
+border-left: 2px solid #9999CC ;
+border-top: 2px solid #9999CC ;
+border-bottom: 2px solid #9999CC
 }
 #workspaces {
-border-right: 2px solid alpha(#b4befe, 0.3);
-border-top: 2px solid alpha(#b4befe, 0.3);
-border-bottom: 2px solid alpha(#b4befe, 0.3)
+border-right: 2px solid #9999CC ;
+border-top: 2px solid #9999CC ;
+border-bottom: 2px solid #9999CC 
 }
 #window {
-border: 2px solid alpha(#b4befe, 0.3);
+border: 2px solid #9999CC ;
 }
 #clock {
-border-right: 2px solid alpha(#b4befe, 0.3);
-border-top: 2px solid alpha(#b4befe, 0.3);
-border-bottom: 2px solid alpha(#b4befe, 0.3)
+border-right: 2px solid #9999CC;
+border-top: 2px solid #9999CC;
+border-bottom: 2px solid #9999CC
 }
 #network {
-border-left: 2px solid alpha(#b4befe, 0.3);
-border-top: 2px solid alpha(#b4befe, 0.3);
-border-bottom: 2px solid alpha(#b4befe, 0.3)
+border-left: 2px solid #9999CC;
+border-top: 2px solid #9999CC;
+border-bottom: 2px solid #9999CC
 }
 #battery,
 #pulseaudio {
-border-top: 2px solid alpha(#b4befe, 0.3);
-border-bottom: 2px solid alpha(#b4befe, 0.3)
+border-top: 2px solid #9999CC;
+border-bottom: 2px solid #9999CC
 }
 #tray {
   border-radius: 10px 10px 10px 10px;  
@@ -59,7 +59,7 @@ border-radius: 10px 0px 0px 10px;
 }
 #clock,
 #workspaces {
-    border-radius: 0px 10px 10px 0px;}
+    border-radius: 0px 10px 10px 0px}
 #custom-arch {
 margin-left: 3px; }
 #clock {
