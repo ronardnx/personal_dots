@@ -1,0 +1,27 @@
+# Take a look at the mako manpage with the command:
+#   man 5 mako
+# To view all configuration options.
+
+font=Ubuntu Nerd Font Regular 11
+format=<b>%a </b> %s\n%b
+sort=-time
+border-color=#9999CC
+layer=overlay
+background-color=#1e1e2e
+width=300
+height=110
+margin=5
+padding=0,5,10
+border-size=3
+border-radius=5
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+
+[urgency=normal]
+border-color=#9999CC
+
+[urgency=high]
+border-color=#9999CC
+default-timeout=0
