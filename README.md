@@ -1,5 +1,7 @@
 # personal_dots
-![image](https://github.com/ronardnx/personal_dots/assets/23416091/20c15eb1-4e50-4d2b-acb2-4f2b6bdfa02f)
+
+![image](https://github.com/ronardnx/personal_dots/assets/23416091/2144ec91-eb83-4c44-86fd-90cf1a9896d4)
+
 
 **OS**: ArchLinux
 
