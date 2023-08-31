@@ -27,7 +27,7 @@
     },
     "battery": {
       "bat": "BAT0",
-      "format-charging": "󰚥 ",
+      "format-charging": "󰚥",
       "adapter": "ADP0",
       "interval": 1,
       "states": {
