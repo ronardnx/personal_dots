@@ -1,7 +1,7 @@
 * {
   font-family: Ubuntu Nerd Font;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   min-height: 0;
   color: #cdd6f4;
 }
@@ -14,8 +14,8 @@
 #network,
 #custom-arch {
   background-color:  #1e1e2e;
-  margin-top: 2px;
-  margin-bottom: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   padding: 3px;
 }
 #tray {
