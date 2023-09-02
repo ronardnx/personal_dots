@@ -1,37 +1,42 @@
 * {
   font-family: Ubuntu Nerd Font;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   min-height: 0;
   color: #cdd6f4;
 }
 #window,
 #clock,
 #tray,
-#workspaces,
 #pulseaudio,
 #battery,
 #network,
+#workspaces,
+#custom-powermenu,
+#custom-spotify,
 #custom-arch {
   background-color:  #1e1e2e;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 2px;
+  margin-bottom: 0px;
   padding: 3px;
 }
 #tray {
 border: 2px solid #9999CC
 }
 #custom-arch {
-border-left: 2px solid #9999CC ;
-border-top: 2px solid #9999CC ;
-border-bottom: 2px solid #9999CC
+border: 2px solid #9999CC ;
+border-radius: 10px 10px 10px 10px;
+}
+#custom-powermenu {
+border: 2px solid #9999CC ;
+border-radius: 10px 10px 10px 10px;
+}
+#custom-spotify {
+margin-left: 3px ;
+border: 2px solid #9999CC ;
+border-radius: 10px 10px 10px 10px; 
 }
 #workspaces {
-border-right: 2px solid #9999CC ;
-border-top: 2px solid #9999CC ;
-border-bottom: 2px solid #9999CC 
-}
-#window {
 border: 2px solid #9999CC ;
 }
 #clock {
@@ -53,12 +58,10 @@ border-bottom: 2px solid #9999CC
   border-radius: 10px 10px 10px 10px;  
   margin-right: 3px;
 }
-#custom-arch,
 #network {
 border-radius: 10px 0px 0px 10px;
 }
-#clock,
-#workspaces {
+#clock{
     border-radius: 0px 10px 10px 0px}
 #custom-arch {
 margin-left: 3px; }
@@ -83,8 +86,8 @@ padding-right: 3px;
 #workspaces button.focused {
     color: white;
   }
-#window {
-  font-weight: bold;
+#workspaces {
+   border-radius: 10px 10px 10px 10px;
 }
 button {
   min-width: 16px;
