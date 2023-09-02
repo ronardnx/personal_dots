@@ -14,6 +14,6 @@
 
 **Theme**: Catppuccin Mocha Mauve
 
-**Needed packages**: waybar-hyprland, mako, hyprland, alacritty, rofi-lbonn-wayland, polkit-kde-agent, brightnessctl, pulseaudio, and your desired packages
+**Needed packages**: waybar-hyprland, mako, hyprland, alacritty, rofi-lbonn-wayland, polkit-kde-agent, brightnessctl, pulseaudio,rofi-power-manager-git and your desired packages
 
 **Stept to install**: Clone my dots over your ~/.config/ and ~/.local and enjoy. Don't forget to run a fc-cache -v -f after this.
