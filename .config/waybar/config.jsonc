@@ -1,4 +1,4 @@
-{
+
     "layer": "top",
     "position": "top",
     "mod": "dock",
@@ -9,21 +9,26 @@
     "height": 10,
     "modules-left": [
         "custom/arch",
-        "wlr/workspaces"
+        "custom/spotify"
     ],
-    "modules-center": [ "hyprland/window"
-    ],
+    "modules-center": ["wlr/workspaces"],
     "modules-right": [
         "tray",
         "network",
         "battery",
         "pulseaudio",
-        "clock"
+        "clock",
+        "custom/powermenu"
     ],
     "custom/arch": {
         "format":"  ",
       "tooltip": false,
       "on-click": "rofi -show drun"
+    },
+    "custom/powermenu": {
+        "format":" ⏻ ",
+      "tooltip": false,
+      "on-click": "~/.config/hypr/powermenu.sh"
     },
     "battery": {
       "bat": "BAT0",
@@ -40,30 +45,30 @@
       "format-critical": "{icon}",
 
       "format-alt": "{icon} {time}",
-      "format-full": "   ", 
+      "format-full": "   ",
       "format-icons": ["   ", "   ", "   ", "   ", "   "]
-    },   
-
-    "hyprland/window": {
-        "format": "{}",
-        "rewrite": {
-      "(.*) - Mozilla Firefox": "🌎 $1",
-      "(.*) - fish": "> [$1]"
-    }
     },
-    "wlr/workspaces": {
-        "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1",
+"wlr/workspaces": {
+        "disable-scroll": false,
         "all-outputs": true,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
         "on-click": "activate",
         "format": "{icon}",
-    },
+     },
     "tray": {
         "icon-size": 13,
         "tooltip": false,
         "spacing": 10
     },
-
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 ~/.config/waybar/modules/spotify.py --player spotify",
+        "format": " {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
 "pulseaudio": {
         "format": "{icon}",
         "format-muted": " 󰖁 ",
@@ -79,7 +84,7 @@
         "format-ethernet": " ",
         "format-disconnected": "睊",
         "tooltip-format": "{essid}",
-        "on-click": "kitty nmtui",
+        "on-click": "~/.config/rofi/nm-applet/rofi-network-manager.sh",
         "format-icons": ["󰤯 ","󰤟 ","󰤢 ","󰤢 ","󰤨 "],
     },
     "clock": {
@@ -88,3 +93,4 @@
     },
     },
 }
+
