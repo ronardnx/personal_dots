@@ -1,6 +1,7 @@
 # personal_dots
 
-![image](https://github.com/ronardnx/personal_dots/assets/23416091/f77c49a9-e21f-4cd6-934b-de485b6a694f)
+![image](https://github.com/ronardnx/personal_dots/assets/23416091/76611e7e-9e54-4d88-a44b-c758398b5ad6)
+
 
 
 
