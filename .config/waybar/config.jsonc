@@ -1,4 +1,4 @@
-
+{
     "layer": "top",
     "position": "top",
     "mod": "dock",
@@ -11,7 +11,7 @@
         "custom/arch",
         "custom/spotify"
     ],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": [
         "tray",
         "network",
@@ -48,7 +48,7 @@
       "format-full": "   ",
       "format-icons": ["   ", "   ", "   ", "   ", "   "]
     },
-"wlr/workspaces": {
+"hyprland/workspaces": {
         "disable-scroll": false,
         "all-outputs": true,
         "on-scroll-up": "hyprctl dispatch workspace e+1",
